@@ -26,7 +26,7 @@ def receive_data():
     print(phone)
     print(message)
 
-    with smtplib.SMTP("smtp.gmail.com") as connection:
+    with smtplib.SMTP("smtp.mail.yahoo.com") as connection:
         connection.starttls()
         connection.login(user=FROM_EMAIL, password=PASSWORD)
         connection.sendmail(
